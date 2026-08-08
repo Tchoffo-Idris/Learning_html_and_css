@@ -1,0 +1,7 @@
+body {
+    font-family: arial;
+    background-color: rgb(red, green, blue);
+    h1 {
+        color: rgb(#ff0000, #008000, #0000ff);
+    }
+}
