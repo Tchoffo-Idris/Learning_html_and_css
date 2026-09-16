@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        @keyframes colors {
+            0% {
+                background: red;
+            }
+
+            50% {
+                background: blue;
+            }
+
+            100% {
+                background: green;
+            }
+        }
+
+        .box {
+            animation: colors 2s linear infinite;
+            width: 10rem;
+            height: 10rem;
+            margin-left: 1rem;
+        }
+
+        @keyframes color {
+            from {
+                background: red;
+            }
+
+            to {
+                background: blue;
+            }
+        }
+
+        .animate {
+            background: yellow;
+            animation: color 2s;
+            animation-delay: 2s;
+            width: 10rem;
+            height: 10rem;
+            margin-left: 1rem;
+        }
+
+        @keyframes color2 {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: blue;
+            }
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .animate2 {
+            width: 10rem;
+            height: 10rem;
+            animation: color2 5s alternate infinite,
+                spin 1s linear infinite;
+            margin: 3rem 0rem 3rem 3rem;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loader {
+            width: 10rem;
+            height: 10rem;
+            background: skyblue;
+            animation: spin 500ms linear infinite;
+            margin: 3rem 0rem 0rem 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>A simple color animation</h3>
+    <div class="box"></div>
+
+    <h3>Another Animation which has a background color</h3>
+    <div class="animate"></div>
+
+    <h3>Spinning Animation</h3>
+    <div class="animate2"></div>
+
+    <h3>Basic Loader</h3>
+    <div class="loader"></div>
+
+</body>
+
+</html>
