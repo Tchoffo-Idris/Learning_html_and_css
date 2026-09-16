@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Button</title>
+    <style>
+        button.fancy-button {
+            background: blue;
+            color: black;
+            transition: background-color 500ms,
+                transform 500ms 500ms;
+            padding: 1em;
+            border-radius: 5px;
+            margin-left: 1em;
+        }
+
+        button.fancy-button:hover {
+            background: red;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button-transition">
+        <h1>A Fancy Button</h1>
+        <button class="fancy-button">
+            Press to Enter
+        </button>
+    </div>
+</body>
+
+</html>
