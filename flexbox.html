@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box Layout</title>
+    <style>
+        /* Basic Flexbox Layout Styling */
+        .container {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid black;
+        }
+
+        .item,
+        .item2,
+        .item3 {
+            background: rebeccapurple;
+            font-size: 3rem;
+            padding: 2rem;
+            color: white;
+        }
+
+        .item2 {
+            background: skyblue;
+        }
+
+        .item3 {
+            background: orangered;
+        }
+
+        /* Resizing item in flexbox styling */
+        .container2 {
+            border: 1px solid black;
+            padding: 0.5rem;
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .items {
+            width: 300px;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .one {
+            background: blue;
+        }
+
+        .two {
+            background: red;
+        }
+
+        .three {
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Basic Flexbox Layout</h1>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+
+    <h1>Resizing items in flexbox</h1>
+    <div class="container2">
+        <div class="items one">1</div>
+        <div class="items two">2</div>
+        <div class="items three">3</div>
+    </div>
+</body>
+
+</html>
