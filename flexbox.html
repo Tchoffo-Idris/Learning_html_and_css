@@ -57,6 +57,52 @@
         .three {
             background: green;
         }
+
+        /* Flex Overflow */
+        .container3 {
+            border: 1px solid black;
+            padding: 0.5rem;
+            width: 120px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .items-overflow {
+            width: 300px;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        /* Flex Wrap */
+        .container4 {
+            border: 1px solid black;
+            padding: 0.5rem;
+            width: 120px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        /* Flex Grow */
+        .item-grow {
+            width: 100px;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            flex-grow: 1;
+        }
+
+        .two-grow {
+            background: red;
+            flex-grow: 5;
+        }
+
+        /* Flex Shrink */
+        .two-shrink {
+            background: red;
+            flex-shrink: 2;
+        }
     </style>
 </head>
 
@@ -73,6 +119,34 @@
         <div class="items one">1</div>
         <div class="items two">2</div>
         <div class="items three">3</div>
+    </div>
+
+    <h1>Flex Overflow</h1>
+    <div class="container3">
+        <div class="items-overflow one">Item 1</div>
+        <div class="items-overflow two">Item 2</div>
+        <div class="items-overflow three">Item 3</div>
+    </div>
+
+    <h1>Flex Wrap</h1>
+    <div class="container4">
+        <div class="items-overflow one">Item 1</div>
+        <div class="items-overflow two">Item 2</div>
+        <div class="items-overflow three">Item 3</div>
+    </div>
+
+    <h1>Flex Grow</h1>
+    <div class="container2">
+        <div class="item-grow one">1</div>
+        <div class="item-grow two-grow">2</div>
+        <div class="item-grow three">3</div>
+    </div>
+
+    <h1>Flex Shrink</h1>
+    <div class="container3">
+        <div class="items-overflow one">1</div>
+        <div class="items-overflow two-shrink">2</div>
+        <div class="items-overflow three">3</div>
     </div>
 </body>
 
