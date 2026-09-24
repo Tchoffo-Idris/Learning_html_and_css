@@ -103,6 +103,19 @@
             background: red;
             flex-shrink: 2;
         }
+
+        /* Justifying Content */
+        .container-justify-end {
+            justify-content: flex-end;
+        }
+
+        .container-justify-space {
+            justify-content: space-between;
+        }
+
+        .container-justify-space-around {
+            justify-content: space-around;
+        }
     </style>
 </head>
 
@@ -147,6 +160,27 @@
         <div class="items-overflow one">1</div>
         <div class="items-overflow two-shrink">2</div>
         <div class="items-overflow three">3</div>
+    </div>
+
+    <h1>Justify Content End</h1>
+    <div class="container-justify-end container">
+        <div class="item">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+
+    <h1>Justify Content Space-between</h1>
+    <div class="container-justify-space container">
+        <div class="item">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+
+    <h1>Justify Content Space-around</h1>
+    <div class="container-justify-space-around container">
+        <div class="item">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
     </div>
 </body>
 
