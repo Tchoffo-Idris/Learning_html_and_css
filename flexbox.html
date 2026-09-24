@@ -125,6 +125,64 @@
         .container-align-end {
             align-items: flex-end;
         }
+
+        /* Centralizing A box */
+        .container-center {
+            background: skyblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .item-center {
+            background: orangered;
+            width: 5rem;
+            height: 5rem;
+        }
+
+        /* A Simple Page Layout */
+        .container-page {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            border: 5px dashed black;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background: skyblue;
+            padding: 1rem;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            border: 5px dashed blue;
+        }
+
+        .sidebar {
+            background: cornflowerblue;
+            padding: 1rem;
+        }
+
+        .content {
+            flex-grow: 2;
+            background: beige;
+            padding: 1rem;
+        }
+
+        .sidebar-2 {
+            background: turquoise;
+            padding: 1rem;
+        }
+
+        .footer {
+            background: orange;
+            padding: 1rem;
+        }
     </style>
 </head>
 
@@ -206,6 +264,21 @@
         <div class="item3">3</div>
     </div>
 
+    <h1>Centralizing A box</h1>
+    <div class="container-center">
+        <div class="item-center"></div>
+    </div>
+
+    <h1>A Simple Page Layout</h1>
+    <div class="container-page">
+        <header class="header">Header</header>
+        <main class="main">
+            <div class="sidebar">Sidebar</div>
+            <div class="content">Content</div>
+            <div class="sidebar-2">Sidebar 2</div>
+        </main>
+        <footer class="footer">Footer</footer>
+    </div>
 </body>
 
 </html>
