@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background: skyblue;
+            padding: 0.25rem;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            background: red;
+            color: white;
+            text-align: center;
+            margin: 0.25rem;
+            font-size: 2rem;
+        }
+
+        .wide {
+            width: 300px;
+        }
+
+        @media screen and (max-width:480px) {
+            h1 {
+                color: blue;
+            }
+
+            .item {
+                background: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Responsive Layout with Flexbox</h1>
+    <div class="container">
+        <div class="item">Flex Item 1</div>
+        <div class="item wide">Flex Item 2</div>
+        <div class="item">Flex Item 3</div>
+        <div class="item">Flex Item 4</div>
+        <div class="item wide">Flex Item 5</div>
+        <div class="item">Flex Item 6</div>
+    </div>
+
+</body>
+
+</html>
