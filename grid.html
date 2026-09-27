@@ -38,6 +38,15 @@
             width: 30rem;
             gap: 5px;
         }
+
+        /* Grid Sizing - Using the minmax function */
+        .container4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeate(2, minmax(3rem, auto));
+            gap: 5px;
+            width: 15rem;
+        }
     </style>
 </head>
 
@@ -75,6 +84,19 @@
         <div class="item">5</div>
         <div class="item">6</div>
         <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+
+    <!-- Grid Sizing - Using the minmax function -->
+    <h1>Using the minmax function</h1>
+    <div class="container4">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">Hello World! This is my best sentence in programming</div>
         <div class="item">8</div>
     </div>
 </body>
