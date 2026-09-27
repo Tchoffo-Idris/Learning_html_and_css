@@ -82,6 +82,30 @@
             grid-column: 3/ span 2;
             background: lightpink;
         }
+
+        /* Named Grid Lines */
+        .container7 {
+            display: grid;
+            gap: 5px;
+            width: 500px;
+            grid-template-rows:
+                [header-start] 2rem [content-start] 10rem [footer-start] 2rem [footer-end];
+            grid-template-columns:
+                [sidebar-start] 5rem [content-start] 1fr [content-end];
+        }
+
+        .container7>div {
+            background: lightgray;
+        }
+
+        .header {
+            grid-row: header-start / content-start;
+            grid-column: sidebar-start / content-end;
+        }
+
+        .footer {
+            grid-column: sidebar-start / content-end;
+        }
     </style>
 </head>
 
@@ -168,6 +192,15 @@
         <div class="item">5</div>
         <div class="item">6</div>
         <div class="item2">7</div>
+    </div>
+
+    <!-- Named Grid Lines -->
+    <h1>Named Grid Lines</h1>
+    <div class="container7">
+        <div class="item header">Header</div>
+        <div class="item sidebar">Sidebar</div>
+        <div class="item content">Content</div>
+        <div class="item footer">Footer</div>
     </div>
 
 
