@@ -106,6 +106,39 @@
         .footer {
             grid-column: sidebar-start / content-end;
         }
+
+        /* Named Grid Areas */
+        .container8 {
+            display: grid;
+            grid-template-columns: 5rem 1fr;
+            grid-template-rows: 2rem 10rem 2rem;
+            grid-template-areas:
+                'header2 header2 header2'
+                'sidebar2 content2 content2'
+                'footer2 footer2 footer2';
+            gap: 5px;
+            width: 500px;
+        }
+
+        .header2 {
+            grid-area: header2;
+        }
+
+        .footer2 {
+            grid-area: footer2;
+        }
+
+        .sidebar2 {
+            grid-area: sidebar2;
+        }
+
+        .content2 {
+            grid-area: content2;
+        }
+
+        .container8>div {
+            background: lightgray;
+        }
     </style>
 </head>
 
@@ -203,7 +236,14 @@
         <div class="item footer">Footer</div>
     </div>
 
-
+    <!-- Named Grid Areas -->
+    <h1>Named Grid Areas</h1>
+    <div class="container8">
+        <div class="item header2">Header</div>
+        <div class="item sidebar2">Sidebar</div>
+        <div class="item content2">Content</div>
+        <div class="item footer2">Footer</div>
+    </div>
 </body>
 
 </html>
